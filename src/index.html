@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="h-screen bg-white">
+    <!-- navigation -->
+    <nav
+      id="nav"
+      class=" w-full p-3 flex items-center justify-between bg-white shadow-2xl hover:cursor-pointer"
+    >
+      <!-- logo -->
+
+      <a href="#" class="nav-text flex items-center justify-between gap-2">
+        <img
+          class="object-cover max-h-12 max-w-12"
+          src="../assets/imgi_1_asset 0.png"
+          alt="soory can't load"
+        />
+        <span>ToDesktop</span>
+      </a>
+
+      <!-- menulist -->
+      <div class="hidden lg:flex gap-10">
+        <p class="nav-mid-text">Pricing</p>
+        <p class="nav-mid-text">Blogs</p>
+        <p class="nav-mid-text">Plans</p>
+        <p class="nav-mid-text">ShowLog</p>
+        <p class="nav-mid-text">Login</p>
+      </div>
+
+      <!-- expertise -->
+      <div
+        id="expertise"
+        class="hidden lg:flex outline-1 animate-bounce items-center rounded-lg gap-2 px-5 py-2"
+      >
+        <img src="../assets/imgi_2_asset 1.svg" alt="sorry can't load" />
+        electron developer
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+      <!-- hambergeriocn -->
+      <button onclick="MenuShow()" class="hover:cursor-pointer lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- navigation menu for menu iocon -->
+      <div
+        id="responsive_div"
+        class="hidden absolute inset-0 w-full h-screen bg-white px-3 py-5"
+      >
+        <button
+          onclick="MenuShow()"
+          class="float-right h-12 w-12 hover:cursor-pointer"
+        >
+          <i class="fa-solid fa-square-xmark text-red-500"></i>
+        </button>
+        <div class="grid grid-cols-1 gap-4 my-10">
+          <p class="text-2xl hover:bg-slate-300 p-3 rounded-lg">Pricing</p>
+          <p class="text-2xl hover:bg-slate-300 p-3 rounded-lg">Blogs</p>
+          <p class="text-2xl hover:bg-slate-300 p-3 rounded-lg">Plans</p>
+          <p class="text-2xl hover:bg-slate-300 p-3 rounded-lg">ShowLog</p>
+          <p class="text-2xl hover:bg-slate-300 p-3 rounded-lg">Login</p>
+        </div>
+        <hr class="bg-amber-950 h-0.5 m-6" />
+      </div>
+    </nav>
+    <!-- mainsection -->
+    <section class="">
+      <div>
+        <h1>Welcome to my web</h1>
+      </div>
+    </section>
+
+
+
+
+  </body>
+  <script src="../Script.js"></script>
+</html>
