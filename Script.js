@@ -1,17 +1,15 @@
-function MenuShow() {
-  let nav = document.getElementById("nav");
-  let reponsive_div = document.getElementById("responsive_div");
-  let electron = document.getElementById("expertise");
+ function MenuShow() {
+        const responsiveDiv = document.getElementById("responsive_div");
+        const expertise = document.getElementById("expertise");
+        const nav = document.getElementById("nav");
 
-  if (reponsive_div.classList.contains("hidden")) {
-    console.log("now responsive div is activated");
-    reponsive_div.append(electron);
-    reponsive_div.classList.remove("hidden");
-    electron.classList.remove("hidden")
-  } else {
-    console.log("now responsive div is deactivated");
-    reponsive_div.classList.add("hidden");
-    electron.classList.add("hidden");
-    nav.appendChild(electron)
-  }
-}
+        if (responsiveDiv.classList.contains("hidden")) {
+          responsiveDiv.classList.remove("hidden");
+          expertise.classList.remove("hidden");
+          responsiveDiv.appendChild(expertise); // optional: show in menu
+        } else {
+          responsiveDiv.classList.add("hidden");
+          expertise.classList.add("hidden");
+          nav.appendChild(expertise); // return to nav
+        }
+      }
