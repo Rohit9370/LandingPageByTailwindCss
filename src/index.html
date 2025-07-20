@@ -3,6 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+
+      .slideInLeft {
+        animation: slideInLeft 1.2s ease-out forwards;
+      }
+
+      .slideInRight {
+        animation: slideInRight 1.2s ease-out forwards;
+      }
+    </style>
     <title>Tailwind Project</title>
 
     <!-- Font Awesome for icons -->
@@ -560,17 +591,51 @@
                   Enterprise SLA
                 </p>
               </div>
-              <div class="mt-4">
-                <p
-                  class="text-center text-blue-800 text-sm hover:underline cursor-pointer"
-                >
-                  Read Docs
-                </p>
-              </div>
+
+              <!-- Pay Button -->
+              <button
+                class="mt-6 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition text-sm"
+              >
+                Pay $199 for Desktop Builder
+              </button>
+
+              <p
+                class="text-center text-blue-800 text-sm mt-2 hover:underline cursor-pointer"
+              >
+                Read Docs
+              </p>
             </div>
           </div>
-
-          <!-- Add more plans similarly... -->
+        </div>
+      </div>
+      <!-- FAQ SECTION -->
+      <div class="container flex-col md:flex-row">
+        <h1 class="text-5xl font-semibold">FAQ's</h1>
+        <div
+          class="flex flex-col bg-gray-50 border-gray-200 border-2 rounded-lg p-5"
+        >
+          <dt class="text-lg font-semibold" area-controller="desc_1">
+            Is ToDesktop For Me?
+          </dt>
+          <dl id="desc_1">
+            That depends! If you would like to distribute your web app to your
+            users as a downloadable desktop app then ToDesktop is for you.That
+            depends! If you would like to distribute your web app to your users
+            as a downloadable desktop app then ToDesktop is for you.
+          </dl>
+        </div>
+        <div
+          class="flex flex-col bg-gray-50 border-gray-200 border-2 rounded-lg p-5"
+        >
+          <dt class="text-lg font-semibold" area-controller="desc_1">
+            Is ToDesktop For Me?
+          </dt>
+          <dl id="desc_1">
+            That depends! If you would like to distribute your web app to your
+            users as a downloadable desktop app then ToDesktop is for you.That
+            depends! If you would like to distribute your web app to your users
+            as a downloadable desktop app then ToDesktop is for you.
+          </dl>
         </div>
       </div>
     </section>
