@@ -1,9 +1,21 @@
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      colors: {
-        primary: '#1e3a8a',
+      keyframes: {
+        scrollLTR: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        scrollRTL: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        'scroll-ltr': 'scrollLTR 20s linear infinite',
+        'scroll-rtl': 'scrollRTL 20s linear infinite',
       },
     },
   },

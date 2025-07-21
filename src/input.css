@@ -8,5 +8,13 @@
   }
   .nav-mid-text {
     @apply  font-medium text-sm hover:text-blue-700 ;
+  } 
+  .container
+  {
+    @apply   w-screen px-2 mt-16;
   }
 }
+
+
+
+
