@@ -9,7 +9,7 @@ function MenuShow() {
 const companyImagePaths = [];
 for (let i = 4; i <= 27; i++) {
   const assetNum = i - 1;
-  companyImagePaths.push(`../assets/imgi_${i}_asset ${assetNum}.png`);
+  companyImagePaths.push(`./assets/imgi_${i}_asset ${assetNum}.png`);
 }
 
 /**
