@@ -11,6 +11,5 @@
 
 <code>
   <p>clone the project</p>
-  <br/>
   npm run start
 </code>
